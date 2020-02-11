@@ -1,0 +1,125 @@
+body {
+    background-color: #f4f5f6;
+    color: #333;
+    font-size: 12px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.n-icon {
+    display: inline-block;
+    width: 29px;
+    height: 28px;
+    background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+    margin-right: 10px;
+}
+.container > section {
+    margin-top: 30px;
+}
+
+.section-row-margin {
+    margin: 10px auto;
+}
+.background-red {
+    background-color: #f42;
+}
+.background-white {
+    background-color: #fff;
+}
+.font-white {
+    color: #fff;
+}
+.max-width-1310px {
+    max-width: 1310px;
+}
+.margin-top-5px {
+    margin-top: 5px;
+}
+.margin-top-10px {
+    margin-top: 10px;
+}
+
+.sm-section-box {
+display: flex;
+}
+
+.row .itmi-category {
+ margin-top: 10px;
+ margin-bottom: 10px;
+ color: #f72210;
+ font-weight: 700;
+ font-size: 1.25em;
+ text-transform: uppercase;
+}
+.row .col-sm-12 .epick-label {
+    position: absolute;
+    padding: 5px 10px;
+    background-color: rgba(255,255,255,.9);
+    color: #f72210;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.25em;        
+    margin-top: -32px;        
+ }
+
+
+.max-width-290px {
+    max-width: 290px;
+}
+.max-width-397px {
+    max-width: 397px;
+}
+
+.itmi-label {
+    background-color: #f72210;
+    color: #fff;
+    padding: 3px 7px;    
+}
+.section-little-description {
+    color: #000;
+    font-size: 1.3em;
+    font-weight: 100;
+    line-height: 1.3;
+    margin-top: 5px;
+}
+.section-link {
+    margin-top: 5px;
+}
+.section-link > a {
+    color: #000;
+    font-size: 1.75em;
+    font-weight: 700;
+    line-height: 1;
+}
+.section-link > a:hover {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #f72210;
+}
+
+.sm-section-link {
+    flex-wrap: wrap;
+    margin-left: 15px;
+    font-size: 1.30em;
+    line-height: 1.25;
+}
+.sm-section-link > a {
+    color: #000;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1;
+}
+.sm-section-link > a:hover {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #f72210;
+}
+
+
+.section-title {
+    display: flex;
+    border-bottom: 1px solid #ccc;    
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: 700;
+    align-items: center;
+    justify-content:center;
+}
