@@ -4,6 +4,11 @@ body {
     font-size: 12px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
+
+.margin-zero {
+    margin: 0;
+}
+
 .n-icon {
     display: inline-block;
     width: 29px;
@@ -11,12 +16,13 @@ body {
     background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
     margin-right: 10px;
 }
+
 .container > section {
     margin-top: 30px;
 }
 
 .section-row-margin {
-    margin: 10px auto;
+    margin: 25px auto;
 }
 .background-red {
     background-color: #f42;
@@ -36,10 +42,26 @@ body {
 .margin-top-10px {
     margin-top: 10px;
 }
+.padding-45px {
+    padding: 45px;
+}
 
 .sm-section-box {
 display: flex;
 }
+
+.edition-label {
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 1;
+    margin: 10px 10px 0 0;
+    color: #666;
+}
+.border-botom-1px-ccc{
+    border-bottom: 1px solid #ccc;
+}
+
+
 
 .row .itmi-category {
  margin-top: 10px;
@@ -122,4 +144,61 @@ display: flex;
     font-weight: 700;
     align-items: center;
     justify-content:center;
+}
+
+
+/*ONLY FOOTER*/
+.trademark-logo {
+    display: flex;
+    align-items: baseline;
+    float: left;
+}
+.footer-red-logo {    
+    float: left;
+    width: 236px;
+    height: 36px;
+    margin-right: 15px;
+    fill: #f72210;
+}
+.footer-red-logo > svg {
+    display: inline-block;
+}
+.footer-red-logo > span {
+    display: inline-block;
+}
+.footer-social-networks {
+    display: block;
+    float: right;
+}
+.footer-social-networks > a {
+    margin-left: 10px;
+    color: #666;
+}
+.footer-ul-links {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+.footer-li-link {
+    padding: 0 10px 0 0;
+    border-right: 1px solid #ccc;
+    line-height: 1;
+    margin: 10px 10px 0 0;
+    font-size: 1.25em;
+    color: #666;
+}
+.footer-li-link > a {    
+    color: #666;
+    text-decoration: none;
+}
+.footer-li-link > a:hover {
+    color: #000;
+}
+.without-left-padding {
+    padding-left: 0;
+}
+.footer-padding {
+    padding: 0 45px 45px 45px;
 }
