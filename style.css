@@ -9,6 +9,10 @@ body {
     margin: 0;
 }
 
+.without-left-right-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
 .n-icon {
     display: inline-block;
     width: 29px;
@@ -17,12 +21,15 @@ body {
     margin-right: 10px;
 }
 
-.container > section {
-    margin-top: 30px;
+.container .latest-categorized-news {
+    margin-top: 15px;
 }
 
 .section-row-margin {
-    margin: 25px auto;
+    margin: 0 auto;
+}
+.category-row-margin {
+    margin: 25px auto 0 auto;
 }
 .background-red {
     background-color: #f42;
@@ -35,19 +42,40 @@ body {
 }
 .max-width-1310px {
     max-width: 1310px;
+    min-width: 300px;
+    width: auto;
 }
 .margin-top-5px {
     margin-top: 5px;
 }
-.margin-top-10px {
-    margin-top: 10px;
+
+
+.margin-top-10px-xs {
+    margin-top: 0;
 }
+.margin-top-10px-sm {
+    margin-top: 0;
+}
+.margin-top-10px-md {
+    margin-top: 0;
+}
+.margin-top-10px-lg {
+    margin-top: 0;
+}
+.margin-top-10px-xl {
+    margin-top: 0;
+}
+
+
+
 .padding-45px {
     padding: 45px;
 }
 
 .sm-section-box {
-display: flex;
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .edition-label {
@@ -57,11 +85,13 @@ display: flex;
     margin: 10px 10px 0 0;
     color: #666;
 }
-.border-botom-1px-ccc{
+.underline-border-ccc{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
     border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 }
-
-
 
 .row .itmi-category {
  margin-top: 10px;
@@ -86,8 +116,10 @@ display: flex;
 .max-width-290px {
     max-width: 290px;
 }
-.max-width-397px {
-    max-width: 397px;
+.secondary-latest-news {
+    min-width: 135px;
+    max-width: 225px;
+    width: 40%;
 }
 
 .itmi-label {
@@ -138,7 +170,8 @@ display: flex;
 
 .section-title {
     display: flex;
-    border-bottom: 1px solid #ccc;    
+    border-bottom: 1px solid #ccc;        
+    padding-top: 20px;
     padding-bottom: 10px;
     font-size: 1.5em;
     font-weight: 700;
@@ -146,13 +179,14 @@ display: flex;
     justify-content:center;
 }
 
+.category-title {
+    color: #f72210;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
 
 /*ONLY FOOTER*/
-.trademark-logo {
-    display: flex;
-    align-items: baseline;
-    float: left;
-}
 .footer-red-logo {    
     float: left;
     width: 236px;
@@ -160,15 +194,14 @@ display: flex;
     margin-right: 15px;
     fill: #f72210;
 }
-.footer-red-logo > svg {
-    display: inline-block;
-}
-.footer-red-logo > span {
-    display: inline-block;
+.trademark-logo {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
 }
 .footer-social-networks {
-    display: block;
-    float: right;
+    display: flex;
+    align-items: baseline;
 }
 .footer-social-networks > a {
     margin-left: 10px;
@@ -196,9 +229,87 @@ display: flex;
 .footer-li-link > a:hover {
     color: #000;
 }
-.without-left-padding {
-    padding-left: 0;
-}
 .footer-padding {
     padding: 0 45px 45px 45px;
+}
+
+
+@media (max-width: 575px) { 
+    .margin-top-10px-xs {
+        margin-top: 10px;
+    }
+
+    .trademark-logo {
+        flex-direction: column;
+    }
+    .trademark-logo > span {
+        margin-top: 10px;
+    }
+    .underline-border-ccc{
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+    .footer-social-networks > a {
+        margin: 10px 10px 0 0;
+        margin-left: 0;
+        margin-right: 10px;
+        color: #666;
+    }
+    .footer-padding {
+        padding: 0 30px 45px 30px;
+    }
+}
+@media (max-width: 767px) and (min-width: 576px) {
+    .margin-top-10px-sm {
+        margin-top: 10px;
+    }
+
+
+    .trademark-logo {
+        flex-direction: column;
+    }
+    .trademark-logo > span {
+        margin-top: 10px;
+    }
+    .underline-border-ccc{
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+    .footer-social-networks > a {
+        margin: 10px 10px 0 0;
+        margin-left: 0;
+        margin-right: 10px;
+        color: #666;
+    }
+    .footer-padding {
+        padding: 0 30px 45px 30px;
+    }
+}
+@media (max-width: 992px) and (min-width: 768px) { 
+    .margin-top-10px-md {
+        margin-top: 10px;
+    }    
+}
+@media (max-width: 1199px) and (min-width: 993px) { 
+    .margin-top-10px-lg {
+        margin-top: 10px;
+    }
+}
+@media (min-width: 1200px) { 
+    .margin-top-10px-xl {
+        margin-top: 10px;
+    }
+}
+
+.margin-top-10px {
+    margin-top: 10px;
+}
+.margin-top-50px {
+    margin-top: 50px;
 }
