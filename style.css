@@ -5,6 +5,81 @@ body {
   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
+#navbar {
+ list-style-type: none;
+}
+#navbar > li > a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 1;
+ }
+ #navbar > li > a:hover {
+  color: #f42;
+ }
+
+#txtSearch {
+z-index: 3;
+}
+#txtSearch > input {
+  width: 100px;
+  padding: 10px 0 10px 0;
+  font-size: 1.75em;
+  border: 0;
+}
+#txtSearch > i {
+  margin-left: -30px;
+}
+
+
+.date-label > span {
+  color: #fff;
+  padding: 2px 15px;
+  height: min-content;
+  font-size: 1.5em;
+  font-weight: 350;
+}
+
+.menu-wrapper {
+display: none;
+}
+
+.subscribe-label {
+  background-color: #fff;
+    padding: 2px 15px;
+    height: min-content;
+}
+.subscribe-label > a {
+  color:#f72210;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.sign-in-label {
+  background-color: transparent;
+    padding: 2px 15px;
+    height: min-content;
+}
+.sign-in-label > a {
+  color:#fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+
+.header-trapeze {
+position: absolute;
+right: 0;
+width: 75px;
+border-left: 12px solid white;
+    border-top: 13px solid #f72210;
+}
+
 .min-content-height {
     height: min-content;
 }
@@ -32,7 +107,7 @@ body {
 }
 
 .background-red {
-  background-color: #f42;
+  background-color: #f72210;
 }
 
 .background-white {
@@ -178,6 +253,11 @@ body {
   align-items: baseline;
   flex-direction: row;
 }
+.header-white-logo {
+  fill: #fff;
+  width: 396px;
+  height: 60px;
+}
 
 .footer-social-networks {
   display: flex;
@@ -206,6 +286,33 @@ body {
 }
 
 @media (max-width: 575px) {
+  
+.menu-wrapper {
+  display: block;
+  padding: 2px 0 2px 15px;
+  }
+
+.menu-wrapper > a {
+     color: #fea595;
+  }
+  
+  .header-white-logo {
+    width: 132px;
+    height: 20px;
+  }
+  .date-label {
+    visibility: hidden;
+    height: 0;    
+    padding: 0;
+  }
+  .lg-xl-navbar {
+    visibility: hidden;
+    height: 0;
+  }
+  .header-trapeze {
+    visibility: hidden;
+    height: 0;
+  }
   .trademark-logo {
     flex-direction: column;
   }
@@ -231,6 +338,33 @@ body {
 }
 
 @media (max-width: 767px) and (min-width: 576px) {
+    
+.menu-wrapper {
+  display: block;
+  padding: 2px 0 2px 15px;
+  }
+
+.menu-wrapper > a {
+     color: #fea595;
+  }
+  
+  .header-white-logo {
+    width: 132px;
+    height: 20px;
+  }
+  .date-label {
+    visibility: hidden;
+    height: 0;    
+    padding: 0;
+  }
+  .lg-xl-navbar {
+    visibility: hidden;
+    height: 0;
+  }
+  .header-trapeze {
+    visibility: hidden;
+    height: 0;
+  }
   .trademark-logo {
     flex-direction: column;
   }
@@ -255,8 +389,36 @@ body {
   }
 }
 
-/* @media (max-width: 992px) and (min-width: 768px) {
+@media (max-width: 992px) and (min-width: 768px) {
+  
+.menu-wrapper {
+  display: block;
+  padding: 2px 0 2px 15px;
+  }
+
+.menu-wrapper > a {
+     color: #fea595;
+  }
+  
+  .header-white-logo {
+    width: 132px;
+    height: 20px;
+  }
+  .date-label {
+    visibility: hidden;
+    height: 0;    
+    padding: 0;
+  }
+  .lg-xl-navbar {
+    visibility: hidden;
+    height: 0;
+  }
+  .header-trapeze {
+    visibility: hidden;
+    height: 0;
+  }
 }
+/*
 @media (max-width: 1199px) and (min-width: 993px) {
 }
 @media (min-width: 1200px) {
