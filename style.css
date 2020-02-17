@@ -5,30 +5,9 @@ body {
   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
-#navbar {
- list-style-type: none;
+main {
+  padding-top: 150px;
 }
-#navbar > li > a {
-  text-decoration: none;
-  color: #000;
-  font-size: 1.4em;
-  font-weight: 700;
-  line-height: 1;
- }
- #navbar > li > a:hover {
-  color: #f42;
- }
-
-#txtSearch > input {
-  width: 100px;
-  padding: 10px 0 10px 0;
-  font-size: 1.75em;
-  border: 0;
-}
-#txtSearch > i {
-  margin-left: -30px;
-}
-
 
 .date-label > span {
   color: #fff;
@@ -39,16 +18,17 @@ body {
 }
 
 .menu-wrapper {
-display: none;
+  display: none;
 }
 
 .subscribe-label {
   background-color: #fff;
-    padding: 2px 15px;
-    height: min-content;
+  padding: 2px 15px;
+  height: min-content;
 }
+
 .subscribe-label > a {
-  color:#f72210;
+  color: #f72210;
   text-decoration: none;
   font-weight: 700;
   font-size: 1.5em;
@@ -57,39 +37,41 @@ display: none;
 
 .sign-in-label {
   background-color: transparent;
-    padding: 2px 15px;
-    height: min-content;
+  padding: 2px 15px;
+  height: min-content;
 }
+
 .sign-in-label > a {
-  color:#fff;
+  color: #fff;
   text-decoration: none;
   font-weight: 700;
   font-size: 1.5em;
   text-transform: uppercase;
 }
 
-
 .header-trapeze {
-position: absolute;
-right: 0;
-width: 75px;
-border-left: 12px solid white;
-    border-top: 13px solid #f72210;
+  position: absolute;
+  right: 0;
+  width: 75px;
+  border-left: 12px solid white;
+  border-top: 13px solid #f72210;
 }
 
 .min-content-height {
-    height: min-content;
+  height: min-content;
 }
 
-.title-box {
-    text-transform: uppercase;
-    color: rgba(3, 3, 3, 0.4);
-    font-size: 1.2em;
-    font-weight: 700;
+.title-box > h6 {
+  text-transform: uppercase;
+  color: rgba(3, 3, 3, 0.4);
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 0;
 }
-.title-box:hover {    
-    color: rgba(3, 3, 3, 0.4);
-    text-decoration: none;
+
+.title-box:hover {
+  color: rgba(3, 3, 3, 0.4);
+  text-decoration: none;
 }
 
 .n-icon {
@@ -98,6 +80,11 @@ border-left: 12px solid white;
   height: 28px;
   background: url("https://g.newsweek.com/www/images/logo-n1.svg") center/contain no-repeat #f72210;
   margin-right: 10px;
+}
+
+.n-icon.box-shadow {
+  border: 1px solid #fff;
+  box-shadow: 3px 3px #f72210;
 }
 
 .background-red {
@@ -130,7 +117,7 @@ border-left: 12px solid white;
   padding-bottom: 10px;
 }
 
-.row .itmi-category {
+.row.itmi-category {
   margin-top: 10px;
   margin-bottom: 10px;
   color: #f72210;
@@ -149,16 +136,30 @@ border-left: 12px solid white;
   font-size: 1.25em;
   margin-top: -32px;
 }
+
+.row .col-sm-12 .featured-slideshow-label {
+  position: absolute;
+  padding: 20px 30px;
+  color: #f72210;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.25em;
+  margin-top: -52px;
+  width: 70px;
+  height: 52px;
+  background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat;
+}
+
 .row .col-sm-12 .sponsored-label {
-    position: absolute;
-    padding: 5px 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: #3581f4;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.25em;
-    margin-top: -32px;
-  }
+  position: absolute;
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #3581f4;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.25em;
+  margin-top: -32px;
+}
 
 .secondary-latest-news {
   min-width: 135px;
@@ -168,7 +169,7 @@ border-left: 12px solid white;
 }
 
 .opinion-image {
-    border-radius: 50%;    
+  border-radius: 50%;
 }
 
 .itmi-label {
@@ -194,13 +195,6 @@ border-left: 12px solid white;
   text-decoration: none;
 }
 
-.sm-section-link > a:hover {
-  color: #000;
-  text-decoration: none;
-  border-bottom: 2px solid #f72210;
-}
-
-
 .sm-section-link {
   flex-wrap: wrap;
   margin-left: 15px;
@@ -214,9 +208,13 @@ border-left: 12px solid white;
   padding-top: 20px;
   padding-bottom: 10px;
   font-size: 1.5em;
-  font-weight: 700;
   align-items: center;
   justify-content: center;
+}
+
+.section-title > h6 {
+  margin: 0;
+  font-weight: 700;
 }
 
 .category-title {
@@ -238,6 +236,7 @@ border-left: 12px solid white;
   align-items: baseline;
   flex-direction: row;
 }
+
 .header-white-logo {
   fill: #fff;
   width: 396px;
@@ -266,40 +265,45 @@ border-left: 12px solid white;
   color: #666;
 }
 
-.footer-li-link > a:hover {
-  color: #000;
-}
-
 @media (max-width: 575px) {
-  #aside-opinion {
+  main {
+    padding-top: 60px;
+  }
+
+  #top_stories {
     position: relative;
   }
-.menu-wrapper {
-  display: block;
-  padding: 2px 0 2px 15px;
+
+  .menu-wrapper {
+    display: block;
+    padding: 2px 0 2px 15px;
   }
 
-.menu-wrapper > a {
-     color: #fea595;
+  .menu-wrapper > a {
+    color: #fea595;
   }
-  
+
   .header-white-logo {
     width: 132px;
     height: 20px;
   }
+
   .date-label {
     visibility: hidden;
-    height: 0;    
+    height: 0;
     padding: 0;
   }
+
   .lg-xl-navbar {
     visibility: hidden;
     height: 0;
   }
+
   .header-trapeze {
     visibility: hidden;
     height: 0;
   }
+
   .trademark-logo {
     flex-direction: column;
   }
@@ -325,35 +329,44 @@ border-left: 12px solid white;
 }
 
 @media (max-width: 767px) and (min-width: 576px) {
-  #aside-opinion {
-    position: relative;
-  }
-.menu-wrapper {
-  display: block;
-  padding: 2px 0 2px 15px;
+  main {
+    padding-top: 60px;
   }
 
-.menu-wrapper > a {
-     color: #fea595;
+  #top_stories {
+    position: relative;
   }
-  
+
+  .menu-wrapper {
+    display: block;
+    padding: 2px 0 2px 15px;
+  }
+
+  .menu-wrapper > a {
+    color: #fea595;
+  }
+
   .header-white-logo {
     width: 132px;
     height: 20px;
   }
+
   .date-label {
     visibility: hidden;
-    height: 0;    
+    height: 0;
     padding: 0;
   }
+
   .lg-xl-navbar {
     visibility: hidden;
     height: 0;
   }
+
   .header-trapeze {
     visibility: hidden;
     height: 0;
   }
+
   .trademark-logo {
     flex-direction: column;
   }
@@ -379,73 +392,63 @@ border-left: 12px solid white;
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
-  
-.menu-wrapper {
-  display: block;
-  padding: 2px 0 2px 15px;
+  main {
+    padding-top: 60px;
   }
 
-.menu-wrapper > a {
-     color: #fea595;
+  .menu-wrapper {
+    display: block;
+    padding: 2px 0 2px 15px;
   }
-  
+
+  .menu-wrapper > a {
+    color: #fea595;
+  }
+
   .header-white-logo {
     width: 132px;
     height: 20px;
   }
+
   .date-label {
     visibility: hidden;
-    height: 0;    
+    height: 0;
     padding: 0;
   }
+
   .lg-xl-navbar {
     visibility: hidden;
     height: 0;
   }
+
   .header-trapeze {
     visibility: hidden;
     height: 0;
   }
 }
-/*
-@media (max-width: 1199px) and (min-width: 993px) {
-}
-@media (min-width: 1200px) {
-} */
 
-
-/*-----------------TOP Story--------------*/
 .top-story-link {
   margin-top: 5px;
 }
+
 .top-story-link > a {
   color: #000;
   font-size: 1.75em;
   font-weight: 700;
   line-height: 1;
 }
-.top-story-link > a:hover {
-  color: #000;
-  text-decoration: none;
-  border-bottom: 2px solid #f72210;
-}
 
-
-/*----------- more-stories-link-------*/
 .more-stories-link > a {
   color: #000;
   font-weight: 700;
 }
-.more-stories-link  > a:hover {
-  color: #000;
-  text-decoration: none;
-  border-bottom: 1px solid #f72210;
-}
+
 .more-stories-link {
   flex-wrap: wrap;
   line-height: 1.25;
   font-size: 1.25em;
 }
+
 .more-stories-description {
   color: #000;
   font-size: 1.25em;
@@ -453,66 +456,50 @@ border-left: 12px solid white;
   line-height: 1.25;
 }
 
-
-/*------------latest-news-link----------*/
 .latest-news-link {
   flex-wrap: wrap;
   font-size: 1.3em;
   line-height: 1.25;
 }
+
 .latest-news-link > a {
   color: #000;
   font-size: 1em;
   font-weight: 700;
 }
 
-.latest-news-link > a:hover {
-  text-decoration: none;
-  color: #f42;
-  font-size: 1em;
-  font-weight: 700;    
-}
-
-
-/*--------opinion-link--------*/
 .opinion-link > a {
   color: #000;
   font-size: 1em;
   font-weight: 700;
   line-height: 1;
 }
-.opinion-link > a:hover {
-  color: #f42;
-  text-decoration: none;
-}
+
 .opinion-link {
-    flex-wrap: wrap;    
-    font-size: 1.3em;
-    line-height: 1.25;
-}
-.opinion-author {
-    margin-top: 5px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1em;
-    color: #666;
+  flex-wrap: wrap;
+  font-size: 1.3em;
+  line-height: 1.25;
 }
 
-/*------ Section-link for sponsored and featured*/
+.opinion-author {
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1em;
+  color: #666;
+}
+
 .section-link {
   margin-top: 5px;
 }
+
 .section-link > a {
   color: #000;
   font-size: 1.75em;
   font-weight: 700;
   line-height: 1;
 }
-.section-link > a:hover {
-  color: #000;
-  text-decoration: none;
-  border-bottom: 2px solid #f72210;
-}
+
 .section-little-description {
   color: #000;
   font-size: 1.3em;
@@ -521,18 +508,85 @@ border-left: 12px solid white;
   margin-top: 5px;
 }
 
-
-/*------- culture-travel-box --------*/
-.culture-travel-box {
+#culture_travel_box > div {
   background-color: #f4f5f7;
 }
-.culture-travel-tag {  
+
+.culture-travel-tag {
   background-color: #c2d4d7;
   width: min-content;
   color: #000;
 }
-.culture-travel-tag:hover {  
-  background-color: #000;  
+
+.sm-section-link > a:hover {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 2px solid #f72210;
+}
+
+.footer-li-link > a:hover {
+  color: #000;
+}
+
+.top-story-link > a:hover {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 2px solid #f72210;
+}
+
+.more-stories-link > a:hover {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #f72210;
+}
+
+.latest-news-link > a:hover {
+  text-decoration: none;
+  color: #f42;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.opinion-link > a:hover {
+  color: #f42;
+  text-decoration: none;
+}
+
+.section-link > a:hover {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 2px solid #f72210;
+}
+
+.culture-travel-tag:hover {
+  background-color: #000;
   color: #c2d4d7;
   text-decoration: none;
+}
+
+#navbar {
+  list-style-type: none;
+}
+
+#navbar > li > a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#navbar > li > a:hover {
+  color: #f42;
+}
+
+#txtSearch > input {
+  width: 100px;
+  padding: 10px 0 10px 0;
+  font-size: 1.75em;
+  border: 0;
+}
+
+#txtSearch > i {
+  margin-left: -30px;
 }

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -16,6 +15,7 @@
 
     <link rel="icon" type="image/png" href="https://g.newsweek.com/themes/newsweek/favicons/favicon-32x32.png"
         sizes="32x32">
+
     <link rel="stylesheet" href="style.css">
 
     <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
@@ -23,13 +23,12 @@
 
 <body>
 
-    <main class="container-fluid max-width-1310px background-white">
-        <header class="row">
-            <div
-                class="col-0 col-lg-4 col-xl-4 background-red pt-lg-4 pb-lg-3 pt-xl-4 pb-xl-3 d-flex align-items-end date-label">
-                <span>Sun, Feb 16, 2020</span>
+    <header class="container-fluid max-width-1310px fixed-top">
+        <div class="row background-red">
+            <div class="col-0 col-lg-4 col-xl-4 pt-lg-4 pb-lg-3 pt-xl-4 pb-xl-3 d-flex align-items-end date-label">
+                <span>Mon, Feb 17, 2020</span>
             </div>
-            <div class="col-4 col-lg-4 col-xl-4 background-red pt-4 pb-3 d-flex">
+            <div class="col-4 col-lg-4 col-xl-4 pt-4 pb-3 d-flex">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                     y="0px" viewBox="0 0 395.6 60" xml:space="preserve" class="header-white-logo">
                     <g>
@@ -39,14 +38,14 @@
                     </g>
                 </svg>
             </div>
-
-            <div class="col-8 col-lg-4 col-xl-4 background-red pt-4 pb-3 d-flex justify-content-end align-items-end">
+            <div class="col-8 col-lg-4 col-xl-4 pt-4 pb-3 d-flex justify-content-end align-items-end">
                 <span class="sign-in-label"><a href="#">SIGN IN</a></span>
                 <span class="subscribe-label"><a href="#">SUBSCRIBE <i class="fas fa-chevron-right"></i></a></span>
                 <span class="menu-wrapper"><a href="#"><i class="fas fa-bars fa-2x"></i></a></span>
             </div>
-
-            <nav class="col-12 my-auto border-bottom d-flex flex-wrap background-white lg-xl-navbar">
+        </div>
+        <nav class="row my-auto border-bottom d-flex flex-wrap background-white lg-xl-navbar">
+            <div class="col-12 d-flex flex-row">
                 <div class="header-trapeze"></div>
                 <ul id="navbar" class="d-flex flex-wrap mt-3 pl-1">
                     <li><a href="#" class="px-2">U.S.</a></li>
@@ -65,18 +64,22 @@
                     <input type="text" placeholder="Search">
                     <i class="fas fa-search fa-2x"></i>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
+    <main class="container-fluid max-width-1310px background-white">
         <section class="row">
             <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 order-md-3 order-sm-3 order-1">
                 <div class="row">
                     <div
                         class="col-lg-5 col-md-6 col-sm-12 col-xs-12 order-md-1 order-sm-2 order-2 pr-md-4 min-content-height">
-                        <div id="feature-stories-box">
+                        <div id="feature_stories_box">
                             <div class="row">
                                 <div class="col-sm-12 mt-4">
-                                    <a href="#" class="title-box">FEATURED STORIES</a>
+                                    <a href="#" class="title-box">
+                                        <h6>FEATURED STORIES</h6>
+                                    </a>
                                 </div>
                             </div>
                             <div class="row">
@@ -180,7 +183,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="sponsored-insight-box-1">
+                        <div id="sponsored_insight_box_1">
                             <div class="row justify-content-center">
                                 <div class="col-12 col-md-9 col-lg-12 mt-4">
                                     <img src="https://dummyimage.com/397x265/aaa/000" alt="image 1" class="w-100">
@@ -315,13 +318,15 @@
                             </div>
                         </div>
                     </div>
-                    <aside id="aside-opinion"
+                    <div id="top_stories"
                         class="col-lg-7 col-md-6 col-sm-12 col-xs-12 order-md-2 order-sm-1 order-1 pl-md-0 mx-lg-0 mx-xl-0 min-content-height sticky-top">
                         <div class="row">
                             <div class="col-12 order-md-1 order-sm-1 order-1">
                                 <div class="row">
                                     <div class="col-sm-12 mt-4">
-                                        <a href="#" class="title-box">TOP STORY</a>
+                                        <a href="#" class="title-box">
+                                            <h6>TOP STORY</h6>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -351,11 +356,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 mt-4 order-md-2 order-sm-3 order-3">
-                                <div class="culture-travel-box">
+                            <div id="culture_travel_box" class="col-12 mt-4 order-md-2 order-sm-3 order-3">
+                                <div>
                                     <div class="row">
                                         <div class="col-12 my-2 mx-sm-2 mx-lg-2 mx-xl-2">
-                                            <a href="#" class="title-box">CULTURE & TRAVEL</a>
+                                            <a href="#" class="title-box">
+                                                <h6>CULTURE & TRAVEL</h6>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -470,10 +477,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 more-stories-box order-md-3 order-sm-2 order-2">
+                            <div id="more_stories_box" class="col-12 order-md-3 order-sm-2 order-2">
                                 <div class="row">
                                     <div class="col-12 mt-4">
-                                        <a href="#" class="title-box">MORE STORIES</a>
+                                        <a href="#" class="title-box">
+                                            <h6>MORE STORIES</h6>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -715,16 +724,18 @@
                                 </div>
                             </div>
                         </div>
-                    </aside>
+                    </div>
                 </div>
             </div>
 
             <div
                 class="col-lg-3 col-md-12 col-sm-12 col-xs-12 pl-lg-0 order-md-3 order-sm-3 order-2 min-content-height sticky-top">
-                <div id="opinion-box">
+                <aside id="opinion_box">
                     <div class="row">
                         <div class="col-sm-12 mt-4">
-                            <a href="#" class="title-box">OPINION</a>
+                            <a href="#" class="title-box">
+                                <h6>OPINION</h6>
+                            </a>
                         </div>
                     </div>
                     <div class="row">
@@ -835,11 +846,13 @@
 
                         </div>
                     </div>
-                </div>
-                <div id="latest-news-box">
+                </aside>
+                <div id="latest_news_box">
                     <div class="row">
                         <div class="col-sm-12 mt-4">
-                            <a href="#" class="title-box">LATEST NEWS</a>
+                            <a href="#" class="title-box">
+                                <h6>LATEST NEWS</h6>
+                            </a>
                         </div>
                     </div>
                     <div class="row">
@@ -958,7 +971,7 @@
                     </div>
 
                 </div>
-                <div id="sponsored-insight-box-2">
+                <div id="sponsored_insight_box_2">
                     <div class="row">
                         <div class="col-12 offset-md-4 col-md-4 offset-lg-0 col-lg-12 mt-4">
                             <img src="https://dummyimage.com/397x265/aaa/000" alt="image 1" class="w-100">
@@ -1094,7 +1107,7 @@
             <div class="col-sm-12 pb-md-3 pb-lg-3 pb-xl-3">
                 <div class="section-title">
                     <span class="n-icon"></span>
-                    <span>IN THE MAGAZINE</span>
+                    <h6>IN THE MAGAZINE</h6>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12 mt-3 mt-md-0 mt-lg-0">
@@ -1231,7 +1244,7 @@
             <div class="col-sm-12 pb-md-3 pb-lg-3 pb-xl-3">
                 <div class="section-title">
                     <span class="n-icon"></span>
-                    <span>EDITOR'S PICK</span>
+                    <h6>EDITOR'S PICK</h6>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 mt-3 mt-md-0 mt-lg-0">
@@ -1391,15 +1404,15 @@
         <section class="row mt-0 mb-0">
             <div class="col-sm-12 pb-md-3 pb-lg-3 pb-xl-3">
                 <div class="section-title">
-                    <span class="n-icon"></span>
-                    <span>FEATURED SLIDESHOWS</span>
+                    <span class="n-icon box-shadow"></span>
+                    <h6>FEATURED SLIDESHOWS</h6>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12 mt-3 mt-md-0 mt-lg-0">
                 <img src="https://dummyimage.com/397x265/aaa/fff" alt="image 1" class="w-100">
                 <div class="row">
                     <div class="col-sm-12">
-                        <span class="epick-label">Category</span>
+                        <span class="featured-slideshow-label">##</span>
                     </div>
                 </div>
                 <div class="row">
@@ -1414,7 +1427,7 @@
                 <img src="https://dummyimage.com/397x265/aaa/fff" alt="image 2" class="w-100">
                 <div class="row">
                     <div class="col-sm-12">
-                        <span class="epick-label">Category</span>
+                        <span class="featured-slideshow-label">##</span>
                     </div>
                 </div>
                 <div class="row">
@@ -1429,7 +1442,7 @@
                 <img src="https://dummyimage.com/397x265/aaa/fff" alt="image 3" class="w-100">
                 <div class="row">
                     <div class="col-sm-12">
-                        <span class="epick-label">Category</span>
+                        <span class="featured-slideshow-label">##</span>
                     </div>
                 </div>
                 <div class="row">
@@ -1444,7 +1457,7 @@
                 <img src="https://dummyimage.com/397x265/aaa/fff" alt="image 4" class="w-100">
                 <div class="row">
                     <div class="col-sm-12">
-                        <span class="epick-label">Category</span>
+                        <span class="featured-slideshow-label">##</span>
                     </div>
                 </div>
                 <div class="row">
@@ -1459,7 +1472,7 @@
                 <img src="https://dummyimage.com/397x265/aaa/fff" alt="image 5" class="w-100">
                 <div class="row">
                     <div class="col-sm-12">
-                        <span class="epick-label">Category</span>
+                        <span class="featured-slideshow-label">##</span>
                     </div>
                 </div>
                 <div class="row">
@@ -1474,7 +1487,7 @@
                 <img src="https://dummyimage.com/397x265/aaa/fff" alt="image 6" class="w-100">
                 <div class="row">
                     <div class="col-sm-12">
-                        <span class="epick-label">Category</span>
+                        <span class="featured-slideshow-label">##</span>
                     </div>
                 </div>
                 <div class="row">
@@ -1492,8 +1505,8 @@
                 <hr class="border border-top-0">
             </div>
             <div class="col-sm-12">
-                <div class="category-title">U.S.
-                </div>
+                <h6 class="category-title">U.S.
+                </h6>
             </div>
             <div class="col-md-4 col-sm-12 mt-3 mt-md-0 mt-lg-0">
                 <div class="row">
@@ -1576,8 +1589,8 @@
 
         <section class="row mt-0 mb-0">
             <div class="col-sm-12">
-                <div class="category-title">World
-                </div>
+                <h6 class="category-title">World
+                </h6>
             </div>
             <div class="col-md-4 col-sm-12 mt-3 mt-md-0 mt-lg-0">
                 <div class="row">
@@ -1660,8 +1673,8 @@
 
         <section class="row mt-0 mb-0">
             <div class="col-sm-12">
-                <div class="category-title">Business
-                </div>
+                <h6 class="category-title">Business
+                </h6>
             </div>
             <div class="col-md-4 col-sm-12 mt-3 mt-md-0 mt-lg-0">
                 <div class="row">
@@ -1744,8 +1757,8 @@
 
         <section class="row mt-0 mb-0">
             <div class="col-sm-12">
-                <div class="category-title">Tech & Science
-                </div>
+                <h6 class="category-title">Tech & Science
+                </h6>
             </div>
             <div class="col-md-4 col-sm-12 mt-3 mt-md-0 mt-lg-0">
                 <div class="row">
@@ -1828,8 +1841,8 @@
 
         <section class="row mt-0 mb-0">
             <div class="col-sm-12">
-                <div class="category-title">Culture
-                </div>
+                <h6 class="category-title">Culture
+                </h6>
             </div>
             <div class="col-md-4 col-sm-12 mt-3 mt-md-0 mt-lg-0">
                 <div class="row">
@@ -1912,8 +1925,8 @@
 
         <section class="row mt-0 mb-0">
             <div class="col-sm-12">
-                <div class="category-title">Sports
-                </div>
+                <h6 class="category-title">Sports
+                </h6>
             </div>
             <div class="col-md-4 col-sm-12 mt-3 mt-md-0 mt-lg-0">
                 <div class="row">
@@ -1994,7 +2007,10 @@
             </div>
         </section>
 
-        <footer class="row pt-3 pr-5 pb-5 pl-5">
+    </main>
+
+    <footer class="container-fluid max-width-1310px background-white">
+        <div class="row pt-3 pr-5 pb-5 pl-5">
             <div class="col-sm-12 pl-0 pr-0 d-flex footer-display">
                 <div class="trademark-logo">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -2042,8 +2058,8 @@
                     <li class="footer-li-link"><a href="#">Consent preferences</a></li>
                 </ul>
             </div>
-        </footer>
-    </main>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
