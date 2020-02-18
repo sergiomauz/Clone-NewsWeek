@@ -38,7 +38,6 @@ main {
 .sign-in-label {
   background-color: transparent;
   padding: 2px 15px;
-  height: min-content;
 }
 
 .sign-in-label > a {
@@ -93,6 +92,10 @@ main {
 
 .background-white {
   background-color: #fff;
+}
+
+.background-subscribe {
+  background-color: #f4f5f6;
 }
 
 .max-width-1310px {
@@ -265,6 +268,19 @@ main {
   color: #666;
 }
 
+.subscribe-image {
+  min-width: 180px;
+  max-width: 260px;
+  width: 100%;
+  height: 235px;
+}
+
+.newsletter-image {
+  max-width: 120px;
+  height: 265px;
+  width: 100%;
+}
+
 @media (max-width: 575px) {
   main {
     padding-top: 60px;
@@ -272,6 +288,11 @@ main {
 
   #top_stories {
     position: relative;
+  }
+
+  .newsletter-image {
+    width: 100%;
+    height: 150px;
   }
 
   .menu-wrapper {
@@ -337,6 +358,11 @@ main {
     position: relative;
   }
 
+  .newsletter-image {
+    width: 100%;
+    height: 150px;
+  }
+
   .menu-wrapper {
     display: block;
     padding: 2px 0 2px 15px;
@@ -391,9 +417,14 @@ main {
   }
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
   main {
     padding-top: 60px;
+  }
+
+  .newsletter-image {
+    width: 200px;
+    height: 200px;
   }
 
   .menu-wrapper {
