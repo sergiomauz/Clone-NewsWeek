@@ -2,7 +2,7 @@
 
 > This project consists of replicating the Newsweek.
 
-![screenshot](https://user-images.githubusercontent.com/36812672/74637265-a7e3d980-5137-11ea-81e1-6641eab6fcb3.png)
+![screenshot](https://user-images.githubusercontent.com/36812672/74794853-661b7600-5292-11ea-9839-327eb43bb7d6.png)
 
 ## Built With
 
