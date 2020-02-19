@@ -260,12 +260,6 @@ main {
   fill: #f72210;
 }
 
-.trademark-logo {
-  display: flex;
-  align-items: baseline;
-  flex-direction: row;
-}
-
 .header-white-logo {
   fill: #fff;
   width: 396px;
@@ -273,16 +267,13 @@ main {
 }
 
 .footer-social-networks {
-  display: flex;
   align-items: baseline;
 }
 
 .footer-ul-links {
   list-style-type: none;
-  display: flex;
   padding-left: 0;
   margin: 0;
-  flex-wrap: wrap;
 }
 
 .footer-li-link {
@@ -365,14 +356,6 @@ main {
     height: 0;
   }
 
-  .trademark-logo {
-    flex-direction: column;
-  }
-
-  .trademark-logo > span {
-    margin-top: 10px;
-  }
-
   .footer-display {
     display: flex;
     align-items: baseline;
@@ -431,14 +414,6 @@ main {
   .header-trapeze {
     visibility: hidden;
     height: 0;
-  }
-
-  .trademark-logo {
-    flex-direction: column;
-  }
-
-  .trademark-logo > span {
-    margin-top: 10px;
   }
 
   .footer-display {
