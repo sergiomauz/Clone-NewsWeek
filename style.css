@@ -9,6 +9,28 @@ main {
   padding-top: 150px;
 }
 
+.see-all-label {
+  color: #000;
+}
+
+.see-all-label:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.see-all-label > div {
+  text-align: center;
+  background-color: #f4f5f6;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.see-all-label:hover > div {
+  text-decoration: none;
+  color: #000;
+  background-color: #ccc;
+}
+
 .date-label > span {
   color: #fff;
   padding: 2px 15px;
@@ -175,6 +197,10 @@ main {
   border-radius: 50%;
 }
 
+.itmi-image {
+  width: 100px;
+}
+
 .itmi-label {
   background-color: #f72210;
   color: #fff;
@@ -286,7 +312,7 @@ main {
   min-width: 125px;
   max-width: 180px;
   width: 100%;
-  height: 235px;  
+  height: 235px;
 }
 
 .newsletter-image {
@@ -553,14 +579,16 @@ main {
   margin-top: 5px;
 }
 
-#culture_travel_box > div {
-  background-color: #f4f5f7;
-}
-
 .culture-travel-tag {
   background-color: #c2d4d7;
   width: min-content;
   color: #000;
+}
+
+.update-pref > a {
+  color: #000;
+  font-weight: 700;
+  font-size: 0.9em;
 }
 
 .sm-section-link > a:hover {
@@ -607,6 +635,28 @@ main {
   background-color: #000;
   color: #c2d4d7;
   text-decoration: none;
+}
+
+.sign-up-gray {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25em;
+  background-color: #666;
+  text-align: center;
+}
+
+.sign-up-gray:hover {
+  color: #fff;
+  background-color: #aaa;
+  text-decoration: none;
+}
+
+.update-pref > a:hover {
+  text-decoration: none;
+}
+
+#culture_travel_box > div {
+  background-color: #f4f5f7;
 }
 
 #navbar {
